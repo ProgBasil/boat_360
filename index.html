@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Boat 360°</title>
+  <style> * { margin: 0; padding: 0; } body { background: #000; } </style>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css">
+</head>
+<body>
+  <div id="panorama" style="width:100vw;height:100vh;"></div>
+  <script>
+    pannellum.viewer('panorama', {
+      type: 'equirectangular',
+      panorama: '360_deck.png',
+      autoLoad: true,
+      autoRotate: -2,
+      compass: false,
+      showZoomCtrl: true,
+      mouseZoom: true,
+    });
+  </script>
+</body>
+</html>
